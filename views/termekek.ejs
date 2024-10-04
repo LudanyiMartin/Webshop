@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="post">
+    <fieldset style="width: 750px; margin-left: 550px; ">
+      <legend>Válasszon tejet!</legend>
+      <div style="text-align: center;">
+        <input type="radio" id="spar" name="tej" value="spar">
+        <label for="spar"><img src="/spar.png" alt=""></label>
+        <input type="radio" id="mizo" name="tej" value="mizo">
+        <label for="mizo"><img src="/mizo.png" alt=""></label>
+        <input type="radio" id="hazai" name="tej" value="hazai">
+        <label for="hazai"><img src="/hazai.png" alt=""></label>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset style="width: 750px; margin-left: 550px;">
+      <legend>Szállítasi adatok</legend>
+        <div style="margin-left: 150px;">
+          Név: <br>
+          <input type="text" name="nev"><br>
+        </div>
+        <fieldset style="width: 100px; float: left; margin-left: 150px;">
+          <legend>Számlázási cím</legend>
+          <div>
+            Ország: <br>
+            <input type="text" name="szaml_Orszag"><br>
+            Irányítószám: <br>
+            <input type="number" name="szaml_IranySzam"><br>
+            Város: <br>
+            <input type="text" name="szaml_Varos"><br>
+            Utca, házszám: <br>
+            <input type="text" name="szaml_UtcaHsz">
+          </div>
+        </fieldset>
+        <fieldset style="width: 100px; float: right; margin-right: 150px;">
+          <legend>Szállítasi cím</legend>
+          <div>
+            Ország: <br>
+            <input type="text" name="szall_Orszag"><br>
+            Irányítószám: <br>
+            <input type="number" name="szall_IranySzam"><br>
+            Város: <br>
+            <input type="text" name="szall_Varos"><br>
+            Utca, házszám: <br>
+            <input type="text" name="szall_UtcaHsz">
+          </div>
+        </fieldset>
+        <fieldset style="width: 423px; margin-left: 150px;">
+          <legend>Bankkártya adatok</legend>
+          <div style="float: left;">
+            Kártya szám: <br>
+            <input type="text" name="kartyaSzam"><br>
+          </div>
+          <div style="float: right;">
+            Lejárati dátum: <br>
+            <input type="date" name="lej_datum"><br>
+          </div><br><br><br>
+          <div style="float: right;">
+            CVV: <br>
+            <input type="number" name="cvv" min="1" max="3"><br> 
+          </div>
+        </fieldset>
+        <div style="margin-left: 425px;">
+          Kuponkód: <br>
+          <input type="text" name="kuponkod">
+        </div><br>
+        <input type="submit" value="Vásárlás" style="margin-left: 535px;">
+      </form>
+    </fieldset>
+</body>
+</html>
